@@ -13,5 +13,6 @@ namespace Core.Entities
         public bool State { get; set; }
         public TUserKey IdUserCreator { get; set; }
         public DateTime DateCreated { get; set; }
+        public DateTime LastModification { get; set; }
     }
 }

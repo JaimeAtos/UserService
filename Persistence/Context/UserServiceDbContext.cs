@@ -22,6 +22,7 @@ namespace Persistence.Context
         public DbSet<UserPermission> UserPermission { get; set; }
 
         public DbSet<RolePermission> RolePermission { get; set; }
+        public DbSet<Email> Email { get; set; }
 
     }
 }

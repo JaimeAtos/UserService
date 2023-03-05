@@ -190,11 +190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\obj\\",
+      "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -244,7 +244,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

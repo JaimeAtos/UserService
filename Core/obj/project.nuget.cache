@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cLwIeAEBACV230fmi5B79DeaR4YmaKF1kJj22iEoRvVEA+ea0fIYg4WePpkZME3DeuW34P4+mwTT1cTpMb26YQ==",
+  "dgSpecHash": "KWf2lbSOz1bn7ilyWZL7lOANte8IyjrWsy0qtLSQeFZVk1fwoqngaFrkNcJwGXgrlMnodg5tbr7teBxHkvGlvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

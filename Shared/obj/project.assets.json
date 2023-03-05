@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

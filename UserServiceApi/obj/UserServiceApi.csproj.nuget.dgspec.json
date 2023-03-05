@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\UserServiceApi\\UserServiceApi.csproj": {}
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,18 +61,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Core\\Core.csproj"
+              "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj"
               }
             }
           }
@@ -140,18 +140,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\UserServiceApi\\UserServiceApi.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\UserServiceApi\\UserServiceApi.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj",
         "projectName": "UserServiceApi",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\UserServiceApi\\UserServiceApi.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\UserServiceApi\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,8 +168,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserServiceApi\\Persistence\\Persistence.csproj"
+              "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -184,6 +184,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -218,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

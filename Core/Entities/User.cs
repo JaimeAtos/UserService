@@ -12,13 +12,15 @@ namespace Core.Entities
         public string Name { get; init; }
         public List<UserPermission> UserPermissions { get; set; }
         public List<RolePermission> RolePermissions { get; set; }
+        public List<Email> Emails { get; set; }
 
-        //Todo: Agregar email y otras propiedades faltantes
+        //Todo: Realizar relaciones
 
         public User()
         {
-            this.UserPermissions = new List<UserPermission>();
-            this.RolePermissions = new List<RolePermission>();  
+            UserPermissions = new List<UserPermission>();
+            RolePermissions = new List<RolePermission>();  
+            Emails = new List<Email>();
         }
     }
 }
