@@ -1,6 +1,6 @@
 ﻿namespace Core.Entities
 {
-    public class Permission : MyAppEntityBase<Guid,Guid>
+    public class Permission : AppEntityBase<Guid,Guid>
     {
         public string Name { get; set; }
         public string Description { get; set; }

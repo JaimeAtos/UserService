@@ -1,15 +1,14 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Persistence;
-using Persistence.Context;
-using Persistence.Repositories;
-using Persistence.RepositoriesInterfaces;
+using Application;
+using Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 // Add services to the container.
 /*var connectionString = configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<UserServiceDbContext>(options => options.UseSqlServer(connectionString));*/
+builder.Services.AddApplicationLayer();
+builder.Services.AddSharedInfraestructure();
 builder.Services.AddPersistence(configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

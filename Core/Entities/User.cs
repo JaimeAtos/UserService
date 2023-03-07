@@ -7,7 +7,7 @@ using Atos.Core.Abstractions;
 
 namespace Core.Entities
 {
-    public class User : MyAppEntityBase<Guid, Guid>
+    public class User : AppEntityBase<Guid, Guid>
     {
         public string Name { get; init; }
         public List<UserPermission> UserPermissions { get; set; }

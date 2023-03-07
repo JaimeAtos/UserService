@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xkw3PyMzFYXLmREILK0pzJPg1VtUm5y0qbEEhdL7tnoQV/aQF4nluYDr2eXSsEnVkO+//vxwqBGrmYgqjrtDag==",
+  "dgSpecHash": "YHFIc6a+SQlRgHx+qCiRlnOrfvoiiTcCZ01ezdnT/qjWJzjQK0Feon3k6/II3EZIcbj9fy5e2TFbjjNmedH9wg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj",
+  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\UserServiceApi\\UserServiceApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\a875671\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
@@ -11,7 +15,7 @@
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.14\\microsoft.entityframeworkcore.6.0.14.nupkg.sha512",
@@ -25,14 +29,14 @@
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\5.0.0\\microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
@@ -66,8 +70,8 @@
     "C:\\Users\\a875671\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.25\\upgrade.microservice.sdk.core.1.0.25.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.efcore\\1.0.16\\upgrade.microservice.sdk.efcore.1.0.16.nupkg.sha512"
+    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.27\\upgrade.microservice.sdk.core.1.0.27.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.efcore\\1.0.17\\upgrade.microservice.sdk.efcore.1.0.17.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,7 +2,7 @@
 
 namespace Core.Entities
 {
-    public class UserPermission : MyAppEntityBase<Guid, Guid>
+    public class UserPermission : AppEntityBase<Guid, Guid>
     {
         public Guid UserId { get; set; }
         public Guid PermissionId { get; set; }

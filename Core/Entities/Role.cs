@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Role : MyAppEntityBase<Guid, Guid>
+    public class Role : AppEntityBase<Guid, Guid>
     {
         public string RoleDescription { get; set; }
         public User User { get; set; }

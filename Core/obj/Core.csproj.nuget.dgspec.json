@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj": {}
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,7 +43,7 @@
           "dependencies": {
             "UPgrade.Microservice.SDK.Core": {
               "target": "Package",
-              "version": "[1.0.25, )"
+              "version": "[1.0.27, )"
             }
           },
           "imports": [

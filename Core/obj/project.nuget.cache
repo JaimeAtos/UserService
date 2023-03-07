@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "IBCaBUpad/8vJtynAn/llqVIw0VBYjyGuPSuaUrWIRHvBJYFG3p8SOrPJSPAI08tLx16/0Wrz7bCLm0fBa6J4Q==",
+  "dgSpecHash": "gFbmjpNBiZbaZGgpEUdf0sNLB/lRKz4fcz415FykHupcUtv5VFnmAM9w+XqPt+8IiQjjA7zowjzDk00itARP4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.25\\upgrade.microservice.sdk.core.1.0.25.nupkg.sha512"
+    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.27\\upgrade.microservice.sdk.core.1.0.27.nupkg.sha512"
   ],
   "logs": []
 }

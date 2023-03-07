@@ -1,17 +1,99 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj": {}
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\UserServiceApi\\UserServiceApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "UPgrade.Microservice.SDK.EFCore": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,7 +125,7 @@
           "dependencies": {
             "UPgrade.Microservice.SDK.Core": {
               "target": "Package",
-              "version": "[1.0.25, )"
+              "version": "[1.0.27, )"
             }
           },
           "imports": [
@@ -66,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -91,8 +173,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Core.csproj"
+              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj"
+              },
+              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj"
               }
             }
           }
@@ -121,9 +206,13 @@
               "target": "Package",
               "version": "[6.0.14, )"
             },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "UPgrade.Microservice.SDK.EFCore": {
               "target": "Package",
-              "version": "[1.0.16, )"
+              "version": "[1.0.17, )"
             }
           },
           "imports": [
@@ -146,14 +235,14 @@
         }
       }
     },
-    "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj",
-        "projectName": "UserServiceApi",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\UserServiceApi.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserServiceApi\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -171,8 +260,74 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\Persistence\\Persistence.csproj"
+              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\UserServiceApi\\UserServiceApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\UserServiceApi\\UserServiceApi.csproj",
+        "projectName": "UserServiceApi",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\UserServiceApi\\UserServiceApi.csproj",
+        "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\UserServiceApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj"
+              },
+              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj"
+              },
+              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Shared\\Shared.csproj"
               }
             }
           }

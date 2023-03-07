@@ -29,7 +29,7 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("EmailDescription")
@@ -37,17 +37,17 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("IsDefault")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("LastModification")
-                        .HasColumnType("datetime2");
-
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -69,7 +69,7 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(32)");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -77,11 +77,7 @@ namespace Persistence.Migrations
                         .HasColumnType("varchar(512)");
 
                     b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("LastModification")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -89,6 +85,10 @@ namespace Persistence.Migrations
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -102,15 +102,11 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("LastModification")
-                        .HasColumnType("datetime2");
 
                     b.Property<Guid>("PermissionId")
                         .HasColumnType("uniqueidentifier");
@@ -121,6 +117,10 @@ namespace Persistence.Migrations
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -141,15 +141,11 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("LastModification")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -157,6 +153,10 @@ namespace Persistence.Migrations
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -170,21 +170,21 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("LastModification")
-                        .HasColumnType("datetime2");
 
                     b.Property<Guid>("PermissionId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");

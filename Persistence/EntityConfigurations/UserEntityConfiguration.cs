@@ -1,8 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore;
+﻿using Atos.EFCore.Extensions;
 using Core.Entities;
-using Atos.EFCore.Extensions;
-using static System.Net.Mime.MediaTypeNames;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.EntityConfigurations
 {
@@ -14,7 +13,5 @@ namespace Persistence.EntityConfigurations
             builder.Property(p => p.Id).HasDefaultValueSql("NEWID()");
             builder.Property(p => p.Name).HasColumnType("varchar(120)").IsRequired();
         }
-
-        
     }
 }
