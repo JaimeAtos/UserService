@@ -1,11 +1,5 @@
 ﻿using FluentValidation;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Behaviours
 {
@@ -27,7 +21,7 @@ namespace Application.Behaviours
                 var failures = validationResult.SelectMany(r => r.Errors).Where(f => f != null).ToList();
 
                 if (failures.Count != 0)
-                    throw new ValidationException(failures);
+                    throw new Exceptions.ValidationException(failures);
             }
             return await next();
         }

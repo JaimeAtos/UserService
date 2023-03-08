@@ -4,7 +4,7 @@ namespace Core.Entities
 {
     public class User : AppEntityBase<Guid, Guid>
     {
-        public string Name { get; set; }
+        public string Name { get; set; } //
         public List<UserPermission> UserPermissions { get; set; }
         public List<RolePermission> RolePermissions { get; set; }
         public List<Email> Emails { get; set; }

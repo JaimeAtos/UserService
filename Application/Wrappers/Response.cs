@@ -10,8 +10,9 @@
         public Response(T data, string message = null)
         {
             Succeeded = true;
-            Data=data;
             Message=message;
+            Data=data;
+
         }
 
         public Response(string message)
@@ -21,8 +22,9 @@
         }
 
         public bool Succeeded { get; set; }
-        public T Data { get; set; }
         public string Message { get; set; }
         public List<string> Errors { get; set; }
+        public T Data { get; set; }
+
     }
 }

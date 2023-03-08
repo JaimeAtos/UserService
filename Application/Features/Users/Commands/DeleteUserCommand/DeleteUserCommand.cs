@@ -13,8 +13,6 @@ namespace Application.Features.Users.Commands.DeleteUserCommand
 
     public class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand, Response<Guid>>
     {
-        //TODO: Checar si podemos utilizar el repo de Daniel con esto ya que se usar ardalis en el video
-        //Ademas de eso: estos fields me estan dando error, checar porque, puede ser por el int o por otra cosa
         private readonly IArdalisRepositoryAsync<User> _repositoryAsync;
         private readonly IMapper _mapper;
 

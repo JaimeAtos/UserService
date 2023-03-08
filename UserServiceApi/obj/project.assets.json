@@ -1253,7 +1253,6 @@
         "dependencies": {
           "Application": "1.0.0",
           "Ardalis.Specification.EntityFrameworkCore": "6.1.0",
-          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
