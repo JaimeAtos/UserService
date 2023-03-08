@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Application.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Context;
@@ -22,6 +23,7 @@ namespace Persistence
             services.AddTransient<IPermissionRepository, PermissionRepository>();
             services.AddTransient<IRolePermissionRepository, RolePermissionRepository>();
             services.AddTransient<IUserPermissionRepository, UserPermissionRepository>();
+            services.AddTransient(typeof(IArdalisRepositoryAsync<>), typeof(ArdalisRepositoryAsync<>));
 
             return services;
         }

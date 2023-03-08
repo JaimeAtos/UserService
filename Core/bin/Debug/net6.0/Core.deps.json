@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Core/1.0.0": {
         "dependencies": {
-          "UPgrade.Microservice.SDK.Core": "1.0.27"
+          "UPgrade.Microservice.SDK.Core": "1.0.28"
         },
         "runtime": {
           "Core.dll": {}
@@ -53,13 +53,13 @@
           }
         }
       },
-      "UPgrade.Microservice.SDK.Core/1.0.27": {
+      "UPgrade.Microservice.SDK.Core/1.0.28": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "runtime": {
-          "lib/net5.0/Atos.Core.dll": {
+          "lib/net6.0/Atos.Core.dll": {
             "assemblyVersion": "1.0.27.0",
             "fileVersion": "1.0.27.0"
           }
@@ -101,12 +101,12 @@
       "path": "microsoft.extensions.primitives/5.0.0",
       "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
     },
-    "UPgrade.Microservice.SDK.Core/1.0.27": {
+    "UPgrade.Microservice.SDK.Core/1.0.28": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kRwAJ4N4VuuLPvisDQh4caPnfYJRcGHUH92RoG4JNLKE3EN9qK9LFQzkgwiktHciufAYmO9Q0HtrSobZuFkqYQ==",
-      "path": "upgrade.microservice.sdk.core/1.0.27",
-      "hashPath": "upgrade.microservice.sdk.core.1.0.27.nupkg.sha512"
+      "sha512": "sha512-x6ddkZbek9G/iy/P9541mQcZXleK/JefsRXaX8CBKh7gEC+yJkhof1joSKr5fJsk+5bwPsZM9RsbpogE5cG3IQ==",
+      "path": "upgrade.microservice.sdk.core/1.0.28",
+      "hashPath": "upgrade.microservice.sdk.core.1.0.28.nupkg.sha512"
     }
   }
 }

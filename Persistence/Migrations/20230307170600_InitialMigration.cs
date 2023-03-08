@@ -13,14 +13,14 @@ namespace Persistence.Migrations
                 name: "Permission",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
                     Name = table.Column<string>(type: "varchar(64)", nullable: false),
                     Description = table.Column<string>(type: "varchar(512)", nullable: false),
                     Controller = table.Column<string>(type: "varchar(32)", nullable: false),
                     Action = table.Column<string>(type: "varchar(32)", nullable: false),
                     State = table.Column<bool>(type: "bit", nullable: false),
-                    IdUserCreator = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UserCreatorId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,11 +31,11 @@ namespace Persistence.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
                     Name = table.Column<string>(type: "varchar(120)", nullable: false),
                     State = table.Column<bool>(type: "bit", nullable: false),
-                    IdUserCreator = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UserCreatorId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -43,16 +43,38 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Email",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
+                    EmailDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDefault = table.Column<bool>(type: "bit", nullable: false),
+                    State = table.Column<bool>(type: "bit", nullable: false),
+                    UserCreatorId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Email", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Email_Users_Id",
+                        column: x => x.Id,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "RolePermission",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PermissionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     RoleName = table.Column<string>(type: "varchar(32)", nullable: false),
                     State = table.Column<bool>(type: "bit", nullable: false),
-                    IdUserCreator = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UserCreatorId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -75,12 +97,12 @@ namespace Persistence.Migrations
                 name: "UserPermissions",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PermissionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     State = table.Column<bool>(type: "bit", nullable: false),
-                    IdUserCreator = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UserCreatorId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 256, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -122,6 +144,9 @@ namespace Persistence.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Email");
+
             migrationBuilder.DropTable(
                 name: "RolePermission");
 

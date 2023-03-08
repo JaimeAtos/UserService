@@ -1,4 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using Core.Commons;
 
 namespace Core.Entities
 {
@@ -6,7 +6,6 @@ namespace Core.Entities
     {
         public Guid UserId { get; set; }
         public Guid PermissionId { get; set; }
-
         public User User { get; set; }
         public Permission Permission { get; set; }
     }

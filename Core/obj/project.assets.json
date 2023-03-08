@@ -61,19 +61,19 @@
           }
         }
       },
-      "UPgrade.Microservice.SDK.Core/1.0.27": {
+      "UPgrade.Microservice.SDK.Core/1.0.28": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "compile": {
-          "lib/net5.0/Atos.Core.dll": {
+          "lib/net6.0/Atos.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Atos.Core.dll": {
+          "lib/net6.0/Atos.Core.dll": {
             "related": ".xml"
           }
         }
@@ -163,25 +163,25 @@
         "version.txt"
       ]
     },
-    "UPgrade.Microservice.SDK.Core/1.0.27": {
-      "sha512": "kRwAJ4N4VuuLPvisDQh4caPnfYJRcGHUH92RoG4JNLKE3EN9qK9LFQzkgwiktHciufAYmO9Q0HtrSobZuFkqYQ==",
+    "UPgrade.Microservice.SDK.Core/1.0.28": {
+      "sha512": "x6ddkZbek9G/iy/P9541mQcZXleK/JefsRXaX8CBKh7gEC+yJkhof1joSKr5fJsk+5bwPsZM9RsbpogE5cG3IQ==",
       "type": "package",
-      "path": "upgrade.microservice.sdk.core/1.0.27",
+      "path": "upgrade.microservice.sdk.core/1.0.28",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
-        "lib/net5.0/Atos.Core.dll",
-        "lib/net5.0/Atos.Core.xml",
+        "lib/net6.0/Atos.Core.dll",
+        "lib/net6.0/Atos.Core.xml",
         "logo.png",
-        "upgrade.microservice.sdk.core.1.0.27.nupkg.sha512",
+        "upgrade.microservice.sdk.core.1.0.28.nupkg.sha512",
         "upgrade.microservice.sdk.core.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "UPgrade.Microservice.SDK.Core >= 1.0.27"
+      "UPgrade.Microservice.SDK.Core >= 1.0.28"
     ]
   },
   "packageFolders": {
@@ -190,11 +190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\obj\\",
+      "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -205,7 +205,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -226,7 +225,7 @@
         "dependencies": {
           "UPgrade.Microservice.SDK.Core": {
             "target": "Package",
-            "version": "[1.0.27, )"
+            "version": "[1.0.28, )"
           }
         },
         "imports": [

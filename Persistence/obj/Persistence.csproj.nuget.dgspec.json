@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,13 +22,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
@@ -63,7 +70,7 @@
             },
             "UPgrade.Microservice.SDK.EFCore": {
               "target": "Package",
-              "version": "[1.0.17, )"
+              "version": "[1.0.18, )"
             }
           },
           "imports": [
@@ -86,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,7 +111,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -125,7 +131,7 @@
           "dependencies": {
             "UPgrade.Microservice.SDK.Core": {
               "target": "Package",
-              "version": "[1.0.27, )"
+              "version": "[1.0.28, )"
             }
           },
           "imports": [
@@ -148,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\a875671\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a875671\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -166,18 +172,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\a875671\\source\\repos\\UserService\\Core\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Application\\Application.csproj"
+              "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Application\\Application.csproj"
               },
-              "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Core\\Core.csproj"
+              "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Core\\Core.csproj"
               }
             }
           }
@@ -192,6 +197,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.14, )"
@@ -212,7 +221,7 @@
             },
             "UPgrade.Microservice.SDK.EFCore": {
               "target": "Package",
-              "version": "[1.0.17, )"
+              "version": "[1.0.18, )"
             }
           },
           "imports": [

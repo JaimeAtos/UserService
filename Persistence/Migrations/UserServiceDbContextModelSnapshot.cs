@@ -36,9 +36,6 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("IdUserCreator")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<bool>("IsDefault")
                         .HasColumnType("bit");
 
@@ -76,9 +73,6 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(512)");
 
-                    b.Property<Guid>("IdUserCreator")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("varchar(64)");
@@ -104,9 +98,6 @@ namespace Persistence.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("IdUserCreator")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PermissionId")
                         .HasColumnType("uniqueidentifier");
@@ -144,9 +135,6 @@ namespace Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("IdUserCreator")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("varchar(120)");
@@ -172,9 +160,6 @@ namespace Persistence.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("IdUserCreator")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PermissionId")
                         .HasColumnType("uniqueidentifier");

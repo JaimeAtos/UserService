@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.Wrappers
+﻿namespace Application.Wrappers
 {
     public class Response<T>
     {
@@ -27,8 +21,8 @@ namespace Application.Wrappers
         }
 
         public bool Succeeded { get; set; }
-        public T Data { get; }
-        public string Message { get; }
+        public T Data { get; set; }
+        public string Message { get; set; }
         public List<string> Errors { get; set; }
     }
 }

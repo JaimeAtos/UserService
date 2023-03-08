@@ -12,8 +12,8 @@ using Persistence.Context;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(UserServiceDbContext))]
-    [Migration("20230222210721_TryingToAddIdentityToKeys")]
-    partial class TryingToAddIdentityToKeys
+    [Migration("20230307170600_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,35 @@ namespace Persistence.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("Core.Entities.Email", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWID()");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EmailDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDefault")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Email", (string)null);
+                });
 
             modelBuilder.Entity("Core.Entities.Permission", b =>
                 {
@@ -39,16 +68,12 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(32)");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("varchar(512)");
-
-                    b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -56,6 +81,10 @@ namespace Persistence.Migrations
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -69,12 +98,8 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PermissionId")
                         .HasColumnType("uniqueidentifier");
@@ -85,6 +110,10 @@ namespace Persistence.Migrations
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -105,12 +134,8 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -118,6 +143,10 @@ namespace Persistence.Migrations
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -131,18 +160,18 @@ namespace Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("IdUserCreator")
-                        .HasMaxLength(256)
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PermissionId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("UserCreatorId")
+                        .HasMaxLength(256)
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -154,6 +183,17 @@ namespace Persistence.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserPermissions", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Entities.Email", b =>
+                {
+                    b.HasOne("Core.Entities.User", "User")
+                        .WithMany("Emails")
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Core.Entities.RolePermission", b =>
@@ -203,6 +243,8 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Core.Entities.User", b =>
                 {
+                    b.Navigation("Emails");
+
                     b.Navigation("RolePermissions");
 
                     b.Navigation("UserPermissions");

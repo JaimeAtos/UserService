@@ -9,15 +9,37 @@
       "Persistence/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Ardalis.Specification.EntityFrameworkCore": "6.1.0",
           "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.14",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
-          "UPgrade.Microservice.SDK.EFCore": "1.0.17"
+          "UPgrade.Microservice.SDK.EFCore": "1.0.18"
         },
         "runtime": {
           "Persistence.dll": {}
+        }
+      },
+      "Ardalis.Specification/6.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Ardalis.Specification.dll": {
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
+          }
+        }
+      },
+      "Ardalis.Specification.EntityFrameworkCore/6.1.0": {
+        "dependencies": {
+          "Ardalis.Specification": "6.1.0",
+          "Microsoft.EntityFrameworkCore": "6.0.14",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.14"
+        },
+        "runtime": {
+          "lib/net6.0/Ardalis.Specification.EntityFrameworkCore.dll": {
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
+          }
         }
       },
       "AutoMapper/12.0.1": {
@@ -660,42 +682,44 @@
           }
         }
       },
-      "UPgrade.Microservice.SDK.Core/1.0.27": {
+      "UPgrade.Microservice.SDK.Core/1.0.28": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
         "runtime": {
-          "lib/net5.0/Atos.Core.dll": {
+          "lib/net6.0/Atos.Core.dll": {
             "assemblyVersion": "1.0.27.0",
             "fileVersion": "1.0.27.0"
           }
         }
       },
-      "UPgrade.Microservice.SDK.EFCore/1.0.17": {
+      "UPgrade.Microservice.SDK.EFCore/1.0.18": {
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.14",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
-          "UPgrade.Microservice.SDK.Core": "1.0.27"
+          "UPgrade.Microservice.SDK.Core": "1.0.28"
         },
         "runtime": {
-          "lib/net5.0/Atos.EFCore.dll": {
-            "assemblyVersion": "1.0.11.0",
-            "fileVersion": "1.0.11.0"
+          "lib/net6.0/Atos.EFCore.dll": {
+            "assemblyVersion": "1.0.17.0",
+            "fileVersion": "1.0.17.0"
           }
         }
       },
       "Application/1.0.0": {
         "dependencies": {
+          "Ardalis.Specification": "6.1.0",
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "Core": "1.0.0",
           "FluentValidation": "11.5.1",
           "FluentValidation.DependencyInjectionExtensions": "11.5.1",
           "MediatR": "12.0.1",
-          "UPgrade.Microservice.SDK.EFCore": "1.0.17"
+          "UPgrade.Microservice.SDK.EFCore": "1.0.18"
         },
         "runtime": {
           "Application.dll": {}
@@ -703,7 +727,7 @@
       },
       "Core/1.0.0": {
         "dependencies": {
-          "UPgrade.Microservice.SDK.Core": "1.0.27"
+          "UPgrade.Microservice.SDK.Core": "1.0.28"
         },
         "runtime": {
           "Core.dll": {}
@@ -716,6 +740,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Ardalis.Specification/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3+DIYrDWwqXMSki3v+kjP8MhKcCoUHLGp6Lhz1+rwjMTHKe8pYUEJWjOxsS5umyL+IIzvaVZUZmwXCs7rGHy4Q==",
+      "path": "ardalis.specification/6.1.0",
+      "hashPath": "ardalis.specification.6.1.0.nupkg.sha512"
+    },
+    "Ardalis.Specification.EntityFrameworkCore/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/d67ScQWCZaUiNqWoBo3vThRuhKou5hW2XGt6a5ibRp62n7vXd+W8c2Votj52ooaxusitE476uCNJAGt3r0CdA==",
+      "path": "ardalis.specification.entityframeworkcore/6.1.0",
+      "hashPath": "ardalis.specification.entityframeworkcore.6.1.0.nupkg.sha512"
     },
     "AutoMapper/12.0.1": {
       "type": "package",
@@ -1137,19 +1175,19 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "UPgrade.Microservice.SDK.Core/1.0.27": {
+    "UPgrade.Microservice.SDK.Core/1.0.28": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kRwAJ4N4VuuLPvisDQh4caPnfYJRcGHUH92RoG4JNLKE3EN9qK9LFQzkgwiktHciufAYmO9Q0HtrSobZuFkqYQ==",
-      "path": "upgrade.microservice.sdk.core/1.0.27",
-      "hashPath": "upgrade.microservice.sdk.core.1.0.27.nupkg.sha512"
+      "sha512": "sha512-x6ddkZbek9G/iy/P9541mQcZXleK/JefsRXaX8CBKh7gEC+yJkhof1joSKr5fJsk+5bwPsZM9RsbpogE5cG3IQ==",
+      "path": "upgrade.microservice.sdk.core/1.0.28",
+      "hashPath": "upgrade.microservice.sdk.core.1.0.28.nupkg.sha512"
     },
-    "UPgrade.Microservice.SDK.EFCore/1.0.17": {
+    "UPgrade.Microservice.SDK.EFCore/1.0.18": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kWGgx0RmxV+IPHBq9l9oStXSCkShHsnn4kkKZMPWru25b1j7lcEceViZdyfNJi4CsFQCTT9WdGVSUBCHbHKf6Q==",
-      "path": "upgrade.microservice.sdk.efcore/1.0.17",
-      "hashPath": "upgrade.microservice.sdk.efcore.1.0.17.nupkg.sha512"
+      "sha512": "sha512-BxMk795YhSlygO60Ga2JKRmpvkIkNbcoU67rIxsFZok1YUkKueLc6fDJxvsKpSSK23jdoT639h5htoaCw+6xDA==",
+      "path": "upgrade.microservice.sdk.efcore/1.0.18",
+      "hashPath": "upgrade.microservice.sdk.efcore.1.0.18.nupkg.sha512"
     },
     "Application/1.0.0": {
       "type": "project",

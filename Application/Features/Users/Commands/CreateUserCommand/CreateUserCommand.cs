@@ -1,12 +1,8 @@
-﻿using Application.Wrappers;
-using Atos.Core.Abstractions;
+﻿using Application.Interfaces;
+using Application.Wrappers;
+using AutoMapper;
+using Core.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Features.Users.Commands.CreateUserCommand
 {
@@ -18,9 +14,23 @@ namespace Application.Features.Users.Commands.CreateUserCommand
 
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Response<Guid>>
     {
+        //TODO: Checar si podemos utilizar el repo de Daniel con esto ya que se usar ardalis en el video
+        //Ademas de eso: estos fields me estan dando error, checar porque, puede ser por el int o por otra cosa
+        private readonly IArdalisRepositoryAsync<User> _repositoryAsync;
+        private readonly IMapper _mapper;
+
+        public CreateUserCommandHandler(IArdalisRepositoryAsync<User> repositoryAsync, IMapper mapper)
+        {
+            _repositoryAsync=repositoryAsync;
+            _mapper=mapper;
+        }
+
         public async Task<Response<Guid>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var newRecord = _mapper.Map<User>(request);
+            var data = await _repositoryAsync.AddAsync(newRecord);
+
+            return new Response<Guid>(data.Id);
         }
     }
 }

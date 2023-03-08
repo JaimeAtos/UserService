@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "g2iX8NgxdeUpF8my6ipzzOjR2oY4wee+k0W0PgSaKGPWps0XmA2jN7twvjkvZJjugNgFM6ktH07OmiehV3w75A==",
+  "dgSpecHash": "Z6ho70cI0cJTdLeEch2R0aMyH71KI/utIZ1MUsKHibv0BCPz0xOBJIwoi9iaXntJdYwvZJiuG/7P/nr0hwYklQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService\\UserService\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\UserService - Ardalis\\UserService\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\a875671\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\ardalis.specification.entityframeworkcore\\6.1.0\\ardalis.specification.entityframeworkcore.6.1.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
@@ -64,8 +66,8 @@
     "C:\\Users\\a875671\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\a875671\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.27\\upgrade.microservice.sdk.core.1.0.27.nupkg.sha512",
-    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.efcore\\1.0.17\\upgrade.microservice.sdk.efcore.1.0.17.nupkg.sha512"
+    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.28\\upgrade.microservice.sdk.core.1.0.28.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.efcore\\1.0.18\\upgrade.microservice.sdk.efcore.1.0.18.nupkg.sha512"
   ],
   "logs": []
 }

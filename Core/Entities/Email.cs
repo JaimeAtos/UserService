@@ -1,4 +1,6 @@
-﻿namespace Core.Entities
+﻿using Core.Commons;
+
+namespace Core.Entities
 {
     public class Email : AppEntityBase<Guid,Guid>
     {

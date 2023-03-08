@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Atos.Core.Abstractions;
+﻿using Core.Commons;
 
 namespace Core.Entities
 {
     public class User : AppEntityBase<Guid, Guid>
     {
-        public string Name { get; init; }
+        public string Name { get; set; }
         public List<UserPermission> UserPermissions { get; set; }
         public List<RolePermission> RolePermissions { get; set; }
         public List<Email> Emails { get; set; }
+
 
         //Todo: Realizar relaciones
 
